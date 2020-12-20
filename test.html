@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="normalize.css">
+   <style>
+   *{
+   box-sizing:border-box;
+   }
+    svg{
+    display:block;
+    margin:50px auto;
+    }
+    .app{
+    background-color:#ccc;
+    margin:150px auto;
+    padding:10px;
+    width:500px;
+    height:300px;
+    box-sizing:border-box;
+    }
+    .app .green{
+    background-color:#eee;
+    height:280px;
+    padding:0px;
+    }
+    .app .green .top{
+    background-color:#080;
+    height:140px;
+    border-radius:80px 0px 0px 80px;
+     transition:all 1s ease-in-out;
+    }
+    
+    .app .green .top:hover{
+    transform:translate(170px,-170px) rotate(90deg);
+    }
+    
+    
+    .app .green .bottom{
+    background-color:#080;
+    height:140px;
+    border-radius:80px 0px 0px 80px;
+    transition:all 1s ease-in-out;
+    }
+    
+    
+    .app .green .bottom:hover{
+    transform:translate(170px,170px) rotate(-90deg);
+    }
+    
+    
+    .theap{
+    margin:50px auto;
+    background-color:#ddd;
+    width:400px;
+    height:300px;
+    padding:10px;
+    }
+    .theap .container{
+    background-color:#f0f;
+    height:280px;
+    transition:all 1s ease-in-out;
+    }
+    .theap .container:hover{
+    transform:skew(10deg,10deg)
+    }
+   </style>
+  </head>
+  <body>
+   <svg width="500" height="500">
+    <rect x="0" y="0" rx="0" ry="0" width="100%" height="100%" fill="#aaa"/>
+    <ellipse cx="250" cy="250" rx="100" ry="150" fill="#0f0"/>
+    <line x1="250" y1="250" x2="250" y2="400" stroke="orange" stroke-width="10"/>
+    <line x1="250" y1="250" x2="200" y2="380" stroke="orange" stroke-width="10"/>
+   </svg>
+   <div class="app">
+    <div class="green">
+     <div class="top"></div>
+     <div class="bottom"></div>
+    </div>
+   </div>
+   
+   
+   <div class="theap">
+    <div class="container"></div>
+   </div>
+  </body>
+ </html>
